@@ -2,17 +2,17 @@
 cnfg
 ====
 
-Simple config should be simple::
+Simple configuration should be simple. Here's ``example.py``::
 
   import cnfg
   settings = cnfg.load('.examplerc')
   print(settings['message'])
 
 Relative paths are awful. Not all systems have ``/etc``. The only
-reasonable place to put config is in a home directory.
+reasonable place to put configuration is in your home directory.
 
-JSON and YAML are not Python. ``eval`` is not so bad. Here's an
-example config file::
+JSON and YAML are not Python. ``eval`` is not so bad. Here's
+``.examplerc``::
 
   # It's Python, so you can use comments (and more)
   {"message": "My custom message."}
