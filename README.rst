@@ -44,8 +44,8 @@ It's up to you, but it's easy::
   some_var = os.getenv("SOME_VAR", "some default value")
 
 
-What about ``from config import settings`` like confire_?
----------------------------------------------------------
+What about “``from config import settings``,” like confire_?
+------------------------------------------------------------
 
 It's up to you, but it's easy. Just make a file called ``config.py``
 and define ``settings`` in it.
@@ -71,3 +71,12 @@ This is so abstract!
 Check out the example_.
 
 .. _example: https://github.com/ajschumacher/cnfg/tree/master/example
+
+
+
+This is so trivial!
+-------------------
+
+Yes, it's only like five lines of code, but it's useful all over the
+place and it's the right level of complexity for a lot of projects.
+Try it!
