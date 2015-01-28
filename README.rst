@@ -56,13 +56,8 @@ and define ``settings`` in it.
 Where's my home directory?
 --------------------------
 
-On a Mac or Linux machine, try::
-
-  echo ~
-
-On Windows, try::
-
-  echo %userprofile%
+On a Mac or Linux machine, ``echo ~``. On Windows, ``echo
+%userprofile%``.
 
 
 This is so abstract!
@@ -71,7 +66,6 @@ This is so abstract!
 Check out the example_.
 
 .. _example: https://github.com/ajschumacher/cnfg/tree/master/example
-
 
 
 This is so trivial!
