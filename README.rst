@@ -2,4 +2,67 @@
 cnfg
 ====
 
-simple Python config in your home directory
+Simple config should be simple::
+
+  import cnfg
+  settings = cnfg.load('.examplerc')
+  print(settings['message'])
+
+Relative paths are awful. Not all systems have ``/etc``. The only
+reasonable place to put config is in a home directory.
+
+JSON and YAML are not Python. ``eval`` is not so bad. Here's an
+example config file::
+
+  # It's Python, so you can use comments (and more)
+  {"message": "My custom message."}
+
+Now all of these work, assuming the relative directories are as
+implied::
+
+  ./example.py
+  python ../example.py
+  cat example/example.py | python
+
+
+*What about default settings?*
+
+It's up to you, but it's easy, especially if you're keeping all your
+configuration in a dict::
+
+  settings = {"message": "Default message!"}
+  settings.update(cnfg.load('.examplerc'))
+
+
+*What about environment variables?*
+
+It's up to you, but it's easy::
+
+  import os
+  some_var = os.getenv("SOME_VAR", "some default value")
+
+
+*What about ``from config import settings`` like confire_?*
+
+It's up to you, but it's easy. Just make a file called ``config.py``
+and define ``settings`` in it.
+
+.. _confire: https://github.com/bbengfort/confire
+
+
+*Where's my home directory?*
+
+On a Mac or Linux machine, try::
+
+  echo ~
+
+On Windows, try::
+
+  echo %userprofile%
+
+
+*This is so abstract!*
+
+Check out the example_.
+
+.. _example: https://github.com/ajschumacher/cnfg/tree/master/example
