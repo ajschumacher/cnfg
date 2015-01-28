@@ -71,6 +71,5 @@ Check out the example_.
 This is so trivial!
 -------------------
 
-Yes, it's only like five lines of code, but it's useful all over the
-place and it's the right level of complexity for a lot of projects.
-Try it!
+Yes, it's as simple as possible, and it's useful all over the place
+and the right level of complexity for a lot of projects.
