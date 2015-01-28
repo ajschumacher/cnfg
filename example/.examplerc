@@ -1,0 +1,14 @@
+# This is the configuration file for example.py: .examplerc
+
+# Your custom version should be located in your home directory
+# On Macs and Linux machines, you can find this by running
+#     echo ~
+# On Windows, you can find this by running
+#     echo %userprofile%
+
+# The format here is Python. Python dicts are much like JSON.
+
+# example.py has only one setting:
+# "message" should be a string. There is no default.
+
+{"message": "My custom message."}
