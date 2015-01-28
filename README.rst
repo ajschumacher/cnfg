@@ -25,7 +25,8 @@ implied::
   cat example/example.py | python
 
 
-*What about default settings?*
+What about default settings?
+----------------------------
 
 It's up to you, but it's easy, especially if you're keeping all your
 configuration in a dict::
@@ -34,7 +35,8 @@ configuration in a dict::
   settings.update(cnfg.load('.examplerc'))
 
 
-*What about environment variables?*
+What about environment variables?
+---------------------------------
 
 It's up to you, but it's easy::
 
@@ -42,7 +44,8 @@ It's up to you, but it's easy::
   some_var = os.getenv("SOME_VAR", "some default value")
 
 
-*What about ``from config import settings`` like confire_?*
+What about ``from config import settings`` like confire_?
+---------------------------------------------------------
 
 It's up to you, but it's easy. Just make a file called ``config.py``
 and define ``settings`` in it.
@@ -50,7 +53,8 @@ and define ``settings`` in it.
 .. _confire: https://github.com/bbengfort/confire
 
 
-*Where's my home directory?*
+Where's my home directory?
+--------------------------
 
 On a Mac or Linux machine, try::
 
@@ -61,7 +65,8 @@ On Windows, try::
   echo %userprofile%
 
 
-*This is so abstract!*
+This is so abstract!
+--------------------
 
 Check out the example_.
 
