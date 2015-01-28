@@ -1,0 +1,1 @@
+from .cnfg import load
