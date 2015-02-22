@@ -15,8 +15,6 @@ class TestContentsOf(unittest.TestCase):
         mock_codecs_open.assert_called_once_with('/a/path', 'r', 'utf-8')
 
     def test_returns_file_contents(self):
-        # Is there a way to achieve this without `with`, but instead
-        # with a decorator as above?
         with mock.patch('codecs.open', mock.mock_open(read_data='content')):
             result = cnfg.contents_of('/a/path')
         self.assertEqual(result, 'content')
@@ -29,7 +27,6 @@ class TestLoad(unittest.TestCase):
     """
 
     def setUp(self):
-        # Can this be done with less code, perhaps with decorators?
         patch_os_path_join = mock.patch('os.path.join')
         self.addCleanup(patch_os_path_join.stop)
         self.mock_os_path_join = patch_os_path_join.start()
