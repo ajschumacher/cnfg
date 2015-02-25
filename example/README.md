@@ -11,8 +11,7 @@ The `cnfg` package needs to be installed. This is specified in
 
 Now [example.py][] can be run however you want and it will pick up its
 configuration from the `.examplerc` in your home directory. In
-particular, all of these can work, assuming the relative directories
-are as implied:
+particular, all of these can work, with relative directories as implied:
 
 ```python
 ./example.py
