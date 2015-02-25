@@ -17,8 +17,7 @@ JSON and YAML are not Python. ``eval`` is not so bad. Here's
   # It's Python, so you can use comments (and more)
   {"message": "My custom message."}
 
-Now all of these work, assuming the relative directories are as
-implied::
+Now all of these work, with relative directories as implied::
 
   ./example.py
   python ../example.py
