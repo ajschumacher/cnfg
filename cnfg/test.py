@@ -1,6 +1,10 @@
 import cnfg
 import unittest
-import mock
+
+try:
+    import unittest.mock as mock  # Python 3
+except ImportError:
+    import mock                   # Python 2
 
 
 class TestContentsOf(unittest.TestCase):
