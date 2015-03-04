@@ -2,6 +2,11 @@
 cnfg
 ====
 
+
+.. image:: https://coveralls.io/repos/ajschumacher/cnfg/badge.svg
+  :target: https://coveralls.io/r/ajschumacher/cnfg
+
+
 Simple configuration should be simple. Here's ``example.py``::
 
   import cnfg
