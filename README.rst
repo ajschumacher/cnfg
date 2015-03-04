@@ -1,5 +1,6 @@
 .. image:: https://coveralls.io/repos/ajschumacher/cnfg/badge.svg
    :target: https://coveralls.io/r/ajschumacher/cnfg
+   :alt: test coverage
 
 ====
 cnfg
