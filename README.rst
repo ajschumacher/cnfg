@@ -1,6 +1,10 @@
+.. image:: https://travis-ci.org/ajschumacher/cnfg.svg
+    :target: https://travis-ci.org/ajschumacher/cnfg
+    :alt: Build Status
+
 .. image:: https://coveralls.io/repos/ajschumacher/cnfg/badge.svg
    :target: https://coveralls.io/r/ajschumacher/cnfg
-   :alt: test coverage
+   :alt: Test Coverage
 
 .. image:: https://readthedocs.org/projects/cnfg/badge/?version=latest
    :target: https://readthedocs.org/projects/cnfg/?badge=latest
