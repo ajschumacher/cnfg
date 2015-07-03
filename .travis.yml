@@ -21,7 +21,7 @@ install:
 
 
 script:
-    - python cnfg/test.py
+    - coverage run cnfg/test.py
 
 
 after_success:
