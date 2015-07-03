@@ -11,5 +11,13 @@ setup(name='cnfg',
     author='Aaron Schumacher',
     author_email='ajschumacher@gmail.com',
     url='https://github.com/ajschumacher/cnfg',
-    download_url='https://github.com/ajschumacher/cnfg/tarball/0.0.1',
-    version='0.0.1')
+    download_url='https://github.com/ajschumacher/cnfg/tarball/1.0.0',
+    version='1.0.0',
+    classifiers=[
+        "Natural Language :: English",
+        "Programming Language :: Python",
+        "Programming Language :: Python :: 2.7",
+        "Programming Language :: Python :: 3",
+        "License :: OSI Approved :: MIT License",
+        "Development Status :: 5 - Production/Stable",
+    ],)
