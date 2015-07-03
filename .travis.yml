@@ -21,7 +21,7 @@ install:
 
 
 script:
-    - coverage run --source=cnfg cnfg/test.py
+    - coverage run --source=cnfg --omit=*init* cnfg/test.py
 
 
 after_success:
