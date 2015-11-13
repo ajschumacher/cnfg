@@ -15,7 +15,7 @@ class TestContentsOf(unittest.TestCase):
 
     @mock.patch('codecs.open')
     def test_calls_codecs_open(self, mock_codecs_open):
-        result = cnfg.contents_of('/a/path')
+        cnfg.contents_of('/a/path')
         mock_codecs_open.assert_called_once_with('/a/path', 'r', 'utf-8')
 
     def test_returns_file_contents(self):
@@ -58,7 +58,7 @@ class TestLoad(unittest.TestCase):
         self.mock_contents_of.assert_called_once_with('/home/a_user/a_file')
 
     def test_evals_file_contents(self):
-        self.assertEqual(self.result, {'a': 1,})
+        self.assertEqual(self.result, {'a': 1})
 
 
 if __name__ == '__main__':
