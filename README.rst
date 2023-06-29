@@ -6,10 +6,6 @@
    :target: https://coveralls.io/r/ajschumacher/cnfg
    :alt: Test Coverage
 
-.. image:: https://readthedocs.org/projects/cnfg/badge/?version=latest
-   :target: https://readthedocs.org/projects/cnfg/?badge=latest
-   :alt: Documentation Status
-
 ====
 cnfg
 ====
